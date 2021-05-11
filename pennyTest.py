@@ -8,7 +8,7 @@ from cryptoJS_PY import signature_body
 
 #deviceid = uuid.uuid1()
 
-#更新設備   update_user_device
+#更新設備 update_user_device
 with open(file=r'./public.pem') as f:
     pub_key = f.read()
     
