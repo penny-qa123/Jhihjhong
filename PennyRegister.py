@@ -16,7 +16,7 @@ def register(c):
     phone = str(c)
     print(nick_name)
 
-    with open(file=r'.\Key\public.pem') as f1:
+    with open(file=r'./Key/public.pem') as f1:
         pub_key = f1.read()
     data = {'nick_name': nick_name, 'name':name,
             'phone': phone, 'phone_code': '886', 'sms_code': '000000',
@@ -41,7 +41,7 @@ def register(c):
         print("注册",dict_re['comment'],dict_re['nick_name'])
         str_regiser = {"phone": phone, "name": name, "phone_code": "886", "password": "welcomeqa1", "device_id": deviceid}
         json_regiser = json.dumps(str_regiser)
-        with open(file='./RegistedList.txt', mode='a')as fd:
+        with open(file='./Data/RegistedList.txt', mode='a')as fd:
             fd.writelines(
                 time.strftime(json_regiser + '\n')
             )
@@ -50,6 +50,6 @@ def register(c):
 
 if __name__ == '__main__':
     # 调用方法注意不要重复使用数字范围，递增即可
-    for i in range(917444204,917444205):
+    for i in range(917444206,917444207):
         #ListRespToken = []
         register(i)

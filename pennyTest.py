@@ -9,7 +9,7 @@ from cryptoJS_PY import signature_body
 #deviceid = uuid.uuid1()
 
 #更新設備 update_user_device
-with open(file=r'./public.pem') as f:
+with open(file=r'./Key/public.pem') as f:
     pub_key = f.read()
     
 data = {"device_id": "6277f88f-af11-11eb-9936-18c04db5476a", "public_key": pub_key, "sms_code": "000000","pushid": ""}
@@ -28,7 +28,7 @@ print(re.text)
 
 #注冊 register_by_userno
 
-with open(file=r'.\public.pem') as f1:
+with open(file=r'./Key/public.pem') as f1:
     pub_key = f1.read()
 
 data = {'nick_name': 'pennynick009', 'name':'penny009',

@@ -89,3 +89,4 @@
 {"phone": "917444201", "name": "penny201", "phone_code": "886", "password": "welcomeqa1", "device_id": "45238044-b144-11eb-8d65-18c04db5476a"}
 {"phone": "917444202", "name": "penny202", "phone_code": "886", "password": "welcomeqa1", "device_id": "45556cb1-b144-11eb-a758-18c04db5476a"}
 {"phone": "917444203", "name": "penny203", "phone_code": "886", "password": "welcomeqa1", "device_id": "56625acb-b144-11eb-bb86-18c04db5476a"}
+{"phone": "917444206", "name": "penny206", "phone_code": "886", "password": "welcomeqa1", "device_id": "f5f3b066-b3bc-11eb-9c5f-18c04db5476a"}

@@ -30,7 +30,7 @@ class MultiRunner:
 
     def user_info(self, resp):
         str_re = resp.content.decode()
-        with open(file='./DC726_log.txt', mode='a')as fd:
+        with open(file='./Log/DC726_log.txt', mode='a')as fd:
             fd.writelines(
                 time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + str_re + '\n')
 # 主要程序
@@ -41,10 +41,11 @@ class MultiRunner:
             time.sleep(transfer_time)
 if __name__ == '__main__':
     list_thread = []
-    for i in range(1):
+    count = len(open(file='./Data/DC726_LoginAccount.txt', mode='r').readlines())
+    for i in range(count):
         # 每次循环开辟新的内存，禁止将类示例doa放在循环外面，否则内存混乱
         mt = MultiRunner()
-        with open(file='DC726_LoginAccount.txt', mode='r')as f:
+        with open(file='./Data/DC726_LoginAccount.txt', mode='r')as f:
             s_f = f.readlines()
             phone = eval(s_f[i])['phone']
             name = eval(s_f[i])['name']
